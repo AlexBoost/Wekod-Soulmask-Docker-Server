@@ -29,12 +29,6 @@ You'll need to have a docker account install on your machine. either windows or 
 
 ## Environment variables
 
-SERVER_HOSTNAME=Wekod Docker Server
-        - MAX_PLAYER=20
-        - SERVER_PORT=8777 
-        - SERVER_QUERYPORT=27015 
-        - SERVER_ECHOPORT=18888
-
 | Environment Variable	| Value					| Default |
 | -------				| ------------------	| ------------------ |
 | SERVER_HOSTNAME		| The name of your server. It will be displayed in the server list (no " needed) | Wekod SoulMask Docker Dedicated Server |
