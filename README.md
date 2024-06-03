@@ -182,8 +182,10 @@ See the [Environment Variables](#environment-variables) tab to known all availab
 3. Modify the docker-compose.yaml to be convenient with your needs. You can let it as is, it works fine.
 4. Execute the command in a shell based at the folder location containing the docker compose file => `docker compose up -d` (-d is the option to detach directly from the container)
 5. if you didn't add the -d option, then your server is started, but you're attached to it. You'll have to detached from it.
-
-6. Now your server should be downloaded then started.
+  
+6. Now your server should be downloaded then started. 
+    - The download sequence start once you see in the log this line : `>>> Doing a fresh install of the gameserver...` It may takes few minutes on the first start to download all server files.
+    - The launch sequence start once you see in the log this line : `>>> Starting the gameserver`, this can takes few minutes too depending on your machine performances.
 
 > I'll details this section later, but for now, it's good enough to make you start. If you have questions, join the discord and ask me.
 
