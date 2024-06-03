@@ -49,7 +49,7 @@ If you have any question not answer here, join our discord (https://discord.gg/U
 
 ### Why this documentation sucks ?
 	
-That will be better in a few time :)
+That will be better soon :)
 
 ### Why there is nothing else than a docker-compose.yaml
 
