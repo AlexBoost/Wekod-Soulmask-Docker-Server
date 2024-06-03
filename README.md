@@ -18,6 +18,7 @@
 	- [Environment Variables](#environment-variables)
 	- [Getting Started](#getting-started)
 	- [Faq](#faq)
+    - [Troubleshoot](#troubleshoot)
 
 ## Requirements
 
@@ -238,7 +239,7 @@ Yes, I'll implement quickly many things like the possibility to Backup, Restart,
 
 Cause I'm bad at english. Probably cause I'm french too... Who knows...
 
-### Troubleshoot
+## Troubleshoot
 
 #### I'm getting this SteamCMD error `ERROR! Failed to install app '3017300' (Missing file permissions)`
 
