@@ -61,6 +61,11 @@ services:
         - SERVER_PORT=8777 
         - SERVER_QUERYPORT=27015 
         - SERVER_ECHOPORT=18888
+        - SERVER_PASSWORD=MySuperServerPassword123456!
+        - SERVER_ADMIN_PASSWORD=MySuperServerAdminPassword123456*
+        - SERVER_PVP=true
+        - SERVER_LOGS=false
+        - SERVER_MULTIHOME=0.0.0.0
 ```
 
 ### Structure
@@ -159,6 +164,11 @@ environment:
     - SERVER_PORT=8777 
     - SERVER_QUERYPORT=27015 
     - SERVER_ECHOPORT=18888
+    - SERVER_PASSWORD=MySuperServerPassword123456!
+    - SERVER_ADMIN_PASSWORD=MySuperServerAdminPassword123456*
+    - SERVER_PVP=true
+    - SERVER_LOGS=false
+    - SERVER_MULTIHOME=0.0.0.0
 ```
 
 Each line correspond to an environment variable and it's value. no " needed.
