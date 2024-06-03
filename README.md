@@ -37,7 +37,7 @@ SERVER_HOSTNAME=Wekod Docker Server
 
 | Environment Variable	| Value					| Default |
 | -------				| ------------------	| ------------------ |
-| SERVER_HOSTNAME		| The name of your server. It will be displayed in the server list (no " needed) (default | Wekod SoulMask Docker Dedicated Server |
+| SERVER_HOSTNAME		| The name of your server. It will be displayed in the server list (no " needed) | Wekod SoulMask Docker Dedicated Server |
 | MAX_PLAYER			| The maximum amount of player allowed on your server | 20 |
 | SERVER_PORT			| The port to join your server, /!\ need to be open to public on your server. (udp) | 8777 |
 | SERVER_QUERYPORT		| The port to use to contact a master list (the server list) /!\ need to be open to public on your server. (udp) | 27015 |
