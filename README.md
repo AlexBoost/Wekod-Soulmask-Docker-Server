@@ -180,7 +180,7 @@ See the [Environment Variables](#environment-variables) tab to known all availab
 | SERVER_LOGS | false | Enable or not the log mode on your server `true` / `false` |
 | SERVER_MULTIHOME | null | Specifies the local listening address. |
 
-> [!INFO]  
+> [!NOTE]  
 > All environment parameter are optional. It should works even when you provide none.
 > That being said, if you do not assign the SERVER_HOSTNAME environment variable, your serveur will have the name `Wekod SoulMask Docker Dedicated Server`
 
