@@ -187,8 +187,10 @@ See the [Environment Variables](#environment-variables) tab to known all availab
 | SERVER_PASSWORD       | null | The password people have to enter to join your server. |
 | SERVER_ADMIN_PASSWORD | null | The admin password you'll have to type to enter in admin mode |
 | SERVER_PVP | false | Set the PVP mode of your server `true` = PVP / `false` = PVE |
+| SERVER_BACKUP | game default value | Specifies the interval for writing the game database to disk (unit: seconds). |
+| SERVER_SAVING | game default value | Specifies the interval for writing game objects to the database (unit: seconds). |
 | SERVER_LOGS | false | Enable or not the log mode on your server `true` / `false` |
-| SERVER_MULTIHOME | null | Specifies the local listening address. |
+| SERVER_MULTIHOME | game default value | Specifies the local listening address. |
 
 > [!NOTE]  
 > All environment parameter are optional. It should works even when you provide none.
@@ -197,6 +199,12 @@ See the [Environment Variables](#environment-variables) tab to known all availab
 ## Getting Started
 
 1. Create a folder for your game (Ex : /home/ubuntu/Games/SoulMaskServer)
+
+> [!WARNING]  
+> Be sure to create a folder with write user permission. 
+> The docker container has a link between this folder and it's own (if you have setted up the volume link).
+> The container will want to download and install all file into this folder.
+
 2. Place the file docker-compose.yaml inside it.
 3. Modify the docker-compose.yaml to be convenient with your needs. You can let it as is, it works fine.
 4. Execute the command in a shell based at the folder location containing the docker compose file => `docker compose up -d` (-d is the option to detach directly from the container)
@@ -215,10 +223,6 @@ See the [Environment Variables](#environment-variables) tab to known all availab
 
 If you have any question not answer here, join our discord (https://discord.gg/UVwA74F4pH) and ask me.
 
-### Why this documentation sucks ?
-	
-That will be better soon :)
-
 ### Why there is nothing else than a docker-compose.yaml
 
 That's normal, yet, I did not finished to implement all things I had in mind. That will come later.
@@ -228,11 +232,18 @@ If you really want to get them now, find them in the folder /Scripts/.sh inside 
 
 ### Will it have other things to be able to be customized soon ?
 
-Yes, I'll implement quickly many things like the possibility to choose the mode (PVE or PVP), Backup, Restart, Notification, etc.
+Yes, I'll implement quickly many things like the possibility to Backup, Restart, Notification, etc.
 
 ### Why the english looks bad ?
 
 Cause I'm bad at english. Probably cause I'm french too... Who knows...
+
+### Troubleshoot
+
+#### I'm getting this SteamCMD error `ERROR! Failed to install app '3017300' (Missing file permissions)`
+
+That's probably because the main folder you created on your machine which contains the docker-compose.yaml and the map volume folder has no write permission.
+Allow users to write in it and it should be fine.
 
 ## Credits
 
