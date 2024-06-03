@@ -39,9 +39,9 @@ SERVER_HOSTNAME=Wekod Docker Server
 | -------				| ------------------	| ------------------ |
 | SERVER_HOSTNAME		| The name of your server. It will be displayed in the server list (no " needed) (default | Wekod SoulMask Docker Dedicated Server |
 | MAX_PLAYER			| The maximum amount of player allowed on your server | 20 |
-| SERVER_PORT			| The port to join your server, /!\ need to be open to public on your server. | 8777 |
-| SERVER_QUERYPORT		| The port to use to contact a master list (the server list) /!\ need to be open to public on your server. | 27015 |
-| SERVER_ECHOPORT		| \_(-_-)_/ | 18888 |
+| SERVER_PORT			| The port to join your server, /!\ need to be open to public on your server. (udp) | 8777 |
+| SERVER_QUERYPORT		| The port to use to contact a master list (the server list) /!\ need to be open to public on your server. (udp) | 27015 |
+| SERVER_ECHOPORT		| EchoPort (not needed to be open to public) (tcp) | 18888 |
 
 ## FAQ
 
@@ -51,3 +51,21 @@ If you have any question not answer here, join our discord (https://discord.gg/U
 	
 That will be better in a few time :)
 
+### Why there is nothing else than a docker-compose.yaml
+
+That's normal, yet, I did not finished to implement all things I had in mind. That will come later.
+You'll have the DockerFile and all script file.
+
+If you really want to get them now, find them in the folder /Scripts/.sh inside your docker container.
+
+### Will it have other things to be able to be customized soon ?
+
+Yes, I'll implement quickly many things like the possibility to choose the mode (PVE or PVP), Backup, Restart, Notification, etc.
+
+### Why the english looks bad ?
+
+Cause I'm bad at english. Probably cause I'm french too... Who knows...
+
+## Credits
+
+Thanks to jammsen (https://github.com/jammsen) for the inspiration.
