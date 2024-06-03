@@ -173,7 +173,16 @@ See the [Environment Variables](#environment-variables) tab to known all availab
 | SERVER_HOSTNAME		| Wekod SoulMask Docker Dedicated Server | The name of your server. It will be displayed in the server list (no " needed)   |
 | SERVER_PORT			| 8777 | The port to join your server, /!\ need to be open to public on your server. (udp)                                 |
 | SERVER_QUERYPORT		| 27015                                    | The port to use to contact a master list (the server list) /!\ need to be open to public on your server. (udp)   |
-| SERVER_ECHOPORT		| 18888 | EchoPort (not needed to be open to public) (tcp)
+| SERVER_ECHOPORT		| 18888 | EchoPort (not needed to be open to public) (tcp) |
+| SERVER_PASSWORD       | null | The password people have to enter to join your server. |
+| SERVER_ADMIN_PASSWORD | null | The admin password you'll have to type to enter in admin mode |
+| SERVER_PVP | false | Set the PVP mode of your server `true` = PVP / `false` = PVE |
+| SERVER_LOGS | false | Enable or not the log mode on your server `true` / `false` |
+| SERVER_MULTIHOME | null | Specifies the local listening address. |
+
+> [!INFO]  
+> All environment parameter are optional. It should works even when you provide none.
+> That being said, if you do not assign the SERVER_HOSTNAME environment variable, your serveur will have the name `Wekod SoulMask Docker Dedicated Server`
 
 ## Getting Started
 
