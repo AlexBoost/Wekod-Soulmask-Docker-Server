@@ -1,4 +1,4 @@
-# SoulMask - Docker Dedicated Server
+# SoulMask - Wekod Docker Dedicated Server
 
 ![Discord](https://img.shields.io/discord/360026109561274368?logo=discord&logoColor=%237289da&label=Discord&link=https%3A%2F%2Fdiscord.gg%2FUVwA74F4pH)
 
