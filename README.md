@@ -197,7 +197,8 @@ See the [Environment Variables](#environment-variables) tab to known all availab
 > All environment parameter are optional. It should works even when you provide none.
 > That being said, if you do not assign the SERVER_HOSTNAME environment variable, your serveur will have the name `Wekod SoulMask Docker Dedicated Server`
 
-## Getting Started
+Getting Started
+=============
 
 1. Create a folder for your game (Ex : /home/ubuntu/Games/SoulMaskServer)
 
