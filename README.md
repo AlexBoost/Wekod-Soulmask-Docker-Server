@@ -141,7 +141,8 @@ So let's go deep in one target block.
 ```
 `target`: The container port
 
-    :warning: **If you want to change this value** don't forget to change the environment variable.
+> [!WARNING]  
+> **If you want to change this value** don't forget to change the environment variable.
 
 `published`: The publicly exposed port. 
 
@@ -150,6 +151,7 @@ So let's go deep in one target block.
 `mode`: host: For publishing a `host` port on each node, or ingress for a port to be load balanced. Defaults to `ingress`.
 
 #### Environment Variables
+
 ```yaml
 environment:
     - SERVER_HOSTNAME=Wekod Docker Server
@@ -181,7 +183,7 @@ See the [Environment Variables](#environment-variables) tab to known all availab
 4. Execute docker compose => `docker compose up -d` (-d is the option to detach directly from the container)
 5. if you didn't add the -d option, then your server is started, but you're attached to it. You'll have to detached from it.
 
->> I'll extends this section later.                                                                 |
+> I'll extends this section later.                                                                 |
 
 ## FAQ
 
