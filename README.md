@@ -142,7 +142,7 @@ So let's go deep in one target block.
 `target`: The container port
 
 > [!WARNING]  
-> **If you want to change this value** don't forget to change the environment variable.
+> **If you want to change the target value** don't forget to change the environment variable.
 
 `published`: The publicly exposed port. 
 
