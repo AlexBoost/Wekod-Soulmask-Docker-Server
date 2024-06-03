@@ -221,6 +221,7 @@ See the [Environment Variables](#environment-variables) tab to known all availab
 > I'll details this section later, but for now, it's good enough to make you start. If you have questions, join the discord and ask me.
 
 ## FAQ
+======
 
 If you have any question not answer here, join our discord (https://discord.gg/UVwA74F4pH) and ask me.
 
@@ -240,6 +241,7 @@ Yes, I'll implement quickly many things like the possibility to Backup, Restart,
 Cause I'm bad at english. Probably cause I'm french too... Who knows...
 
 ## Troubleshoot
+======
 
 #### I'm getting this SteamCMD error `ERROR! Failed to install app '3017300' (Missing file permissions)`
 
@@ -247,5 +249,6 @@ That's probably because the main folder you created on your machine which contai
 Allow users to write in it and it should be fine.
 
 ## Credits
+======
 
 Thanks to jammsen (https://github.com/jammsen) for the inspiration.
