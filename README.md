@@ -252,7 +252,7 @@ Troubleshoot
 #### I'm getting this SteamCMD error `ERROR! Failed to install app '3017300' (Missing file permissions)`
 
 That's probably because the main folder you created on your machine which contains the docker-compose.yaml and the map volume folder has no write permission.
-Allow users to write in it and it should be fine.
+Allow process to write in it and it should be fine.
 
 Credits
 =============
