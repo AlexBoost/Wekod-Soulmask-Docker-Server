@@ -184,7 +184,7 @@ See the [Environment Variables](#environment-variables) tab to known all availab
 
 > [!WARNING]  
 > if you didn't add the -d option, then your server is started, but you're attached to it. You'll have to detached from it, which might stop it.
-> So you'll have to restart it using this command : `docker start <SoulMaskServer>` where `SoulMaskServer` is the container name define in the `container_name` property of the `docker-compose.yaml` file
+> So you'll have to restart it using this command : `docker start SoulMaskServer` where `SoulMaskServer` is the container name define in the `container_name` property of the `docker-compose.yaml` file
   
 6. Now your server should be downloaded then started. 
     - The download sequence start once you see in the log this line : `>>> Doing a fresh install of the gameserver...` It may takes few minutes on the first start to download all server files.
