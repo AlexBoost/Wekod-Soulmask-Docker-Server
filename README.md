@@ -8,6 +8,7 @@
 	- [Table of Contents](#table-of-contents)
 	- [Requirements](#requirements)
 	- [Getting Started](#getting-started)
+	- [Environment Variables](#environment-variables)
 	- [Faq](#faq)
 
 ## Requirements
@@ -26,6 +27,22 @@ You'll need to have a docker account install on your machine. either windows or 
 
 >> I'll extends this section later.
 
+## Environment variables
+
+SERVER_HOSTNAME=Wekod Docker Server
+        - MAX_PLAYER=20
+        - SERVER_PORT=8777 
+        - SERVER_QUERYPORT=27015 
+        - SERVER_ECHOPORT=18888
+
+| Environment Variable	| Value					| Default |
+| -------				| ------------------	| ------------------ |
+| SERVER_HOSTNAME		| The name of your server. It will be displayed in the server list (no " needed) (default | Wekod SoulMask Docker Dedicated Server |
+| MAX_PLAYER			| The maximum amount of player allowed on your server | 20 |
+| SERVER_PORT			| The port to join your server, /!\ need to be open to public on your server. | 8777 |
+| SERVER_QUERYPORT		| The port to use to contact a master list (the server list) /!\ need to be open to public on your server. | 27015 |
+| SERVER_ECHOPORT		| \_(-_-)_/ | 18888 |
+
 ## FAQ
 
 If you have any question not answer here, join our discord (https://discord.gg/UVwA74F4pH) and ask me.
@@ -33,3 +50,4 @@ If you have any question not answer here, join our discord (https://discord.gg/U
 ### Why this documentation sucks ?
 	
 That will be better in a few time :)
+
