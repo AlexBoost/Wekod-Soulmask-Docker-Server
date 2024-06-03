@@ -2,9 +2,10 @@
 
 ![Discord](https://img.shields.io/discord/360026109561274368?logo=discord&logoColor=%237289da&label=Discord&link=https%3A%2F%2Fdiscord.gg%2FUVwA74F4pH)
 
-## Table of Contents
+Table of Contents
+=============
 
-- [SoulMask - Docker Dedicated Server](#docker---wekod-docker-dedicated-server)
+- [SoulMask - Wekod Docker Dedicated Server](#docker---wekod-docker-dedicated-server)
 	- [Table of Contents](#table-of-contents)
 	- [Requirements](#requirements)
 	- [Docker Compose file](#docker-compose-file)
@@ -20,7 +21,8 @@
 	- [Faq](#faq)
     - [Troubleshoot](#troubleshoot)
 
-## Requirements
+Requirements
+=============
 
 You'll need to have a docker service installed on your machine. Docker need to be able to execute linux containers.
 
@@ -34,7 +36,9 @@ You can install docker on a by refering to these tutorials :
 
 >> I'll extends this section later.
 
-## Docker Compose file
+Docker Compose file
+=============
+
 ```yaml
 services:
   SoulMaskServer:
@@ -176,7 +180,8 @@ Each line correspond to an environment variable and it's value. no " needed.
 
 See the [Environment Variables](#environment-variables) tab to known all available environment variable available and it's default value when not defined.
 
-## Environment variables
+Environment variables
+=============
 
 | Environment Variable	| Default | Value |
 | ---------------------	| --------| ----- |
@@ -221,8 +226,8 @@ Getting Started
 
 > I'll details this section later, but for now, it's good enough to make you start. If you have questions, join the discord and ask me.
 
-## FAQ
-======
+FAQ
+=============
 
 If you have any question not answer here, join our discord (https://discord.gg/UVwA74F4pH) and ask me.
 
@@ -241,15 +246,15 @@ Yes, I'll implement quickly many things like the possibility to Backup, Restart,
 
 Cause I'm bad at english. Probably cause I'm french too... Who knows...
 
-## Troubleshoot
-======
+Troubleshoot
+=============
 
 #### I'm getting this SteamCMD error `ERROR! Failed to install app '3017300' (Missing file permissions)`
 
 That's probably because the main folder you created on your machine which contains the docker-compose.yaml and the map volume folder has no write permission.
 Allow users to write in it and it should be fine.
 
-## Credits
-======
+Credits
+=============
 
 Thanks to jammsen (https://github.com/jammsen) for the inspiration.
