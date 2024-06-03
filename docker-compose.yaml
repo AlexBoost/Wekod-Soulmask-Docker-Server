@@ -24,3 +24,4 @@ services:
         - SERVER_PORT=8777 
         - SERVER_QUERYPORT=27015 
         - SERVER_ECHOPORT=18888
+        - SERVER_PVP=true
