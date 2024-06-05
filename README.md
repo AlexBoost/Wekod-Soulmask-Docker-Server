@@ -201,10 +201,10 @@ Environment variables
 | SERVER_MULTIHOME | game default value | Specifies the local listening address. |
 
 > [!TIP]
-> SERVER_SAVING is used to save the world in memory \
-> SERVER_BACKUP is used to write that memory into the world.db \
-> SERVER_INITBACKUP is used to make backup of the world.db file at server start \
-> SERVER_BACKUP_INTERVAL is used to set the interval of the world.db file saving into backup file
+> `SERVER_SAVING` is used to save the world in memory \
+> `SERVER_BACKUP` is used to write that memory into the world.db \
+> `SERVER_INITBACKUP` is used to make backup of the world.db file at server start \
+> `SERVER_BACKUP_INTERVAL` is used to set the interval of the world.db file saving into backup file
 
 > [!NOTE]  
 > All environment parameter are optional. It should works even when you provide none. \
