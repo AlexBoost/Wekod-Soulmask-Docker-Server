@@ -195,6 +195,8 @@ Environment variables
 | SERVER_PVP | false | Set the PVP mode of your server `true` = PVP / `false` = PVE |
 | SERVER_BACKUP | game default value | Specifies the interval for writing the game database to disk (unit: seconds). |
 | SERVER_SAVING | game default value | Specifies the interval for writing game objects to the database (unit: seconds). |
+| SERVER_INITBACKUP | null | Backs up game saves (world.db) when the game starts. |
+| SERVER_BACKUP_INTERVAL | null | Specifies how often (minutes) to automatically back up the world save (world.db). This will create a copy of the world.db every interval you defined. Location of these files are next to the world.db file (Ex: auto_0_20240605134600.db) |
 | SERVER_LOGS | false | Enable or not the log mode on your server `true` / `false` |
 | SERVER_MULTIHOME | game default value | Specifies the local listening address. |
 
