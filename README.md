@@ -207,8 +207,8 @@ Environment variables
 > SERVER_BACKUP_INTERVAL is used to set the interval of the world.db file saving into backup file
 
 > [!NOTE]  
-> All environment parameter are optional. It should works even when you provide none.
-> That being said, if you do not assign the SERVER_HOSTNAME environment variable, your serveur will have the name `Wekod SoulMask Docker Dedicated Server`
+> All environment parameter are optional. It should works even when you provide none. \
+> That being said, if you do not assign the SERVER_HOSTNAME environment variable, your serveur will have the name `Wekod SoulMask Docker Dedicated Server` \
 > SERVER_BACKUP_INTERVAL is used to backup your world.db, so it's optional, but recommanded to use if you don't want a loss of data in case of corrupt save |
 
 Getting Started
