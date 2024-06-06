@@ -49,17 +49,17 @@ services:
         - ./data:/SoulMaskServer
     ports:
         - target: 8777
-        published: 8777
-        protocol: udp
-        mode: host
+          published: 8777
+          protocol: udp
+          mode: host
         - target: 27015
-        published: 27015
-        protocol: udp
-        mode: host
+          published: 27015
+          protocol: udp
+          mode: host
         - target: 18888
-        published: 18888
-        protocol: tcp
-        mode: host
+          published: 18888
+          protocol: tcp
+          mode: host
     environment:
         - SERVER_HOSTNAME=Wekod Docker Server
         - MAX_PLAYER=20
