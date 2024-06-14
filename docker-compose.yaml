@@ -18,10 +18,23 @@ services:
         published: 18888
         protocol: tcp
         mode: host
+      - target: 19000
+        published: 19000
+        protocol: tcp
+        mode: host
     environment:
         - SERVER_HOSTNAME=Wekod Docker Server
         - MAX_PLAYER=20
         - SERVER_PORT=8777 
-        - SERVER_QUERYPORT=27015 
+        - SERVER_QUERYPORT=27015
         - SERVER_ECHOPORT=18888
-        - SERVER_PVP=true
+        - SERVER_PASSWORD=MySuperServerPassword123456!
+        - SERVER_ADMIN_PASSWORD=MySuperServerAdminPassword123456*
+        - SERVER_PVP=false
+        - SERVER_LOGS=false
+        - SERVER_BACKUP=60
+        - SERVER_SAVING=60
+        - SERVER_MULTIHOME=0.0.0.0
+        - SERVER_INITBACKUP=true
+        - SERVER_BACKUP_INTERVAL=720
+        - SERVER_RCON_PASSWORD=MySuperRconPassword123456@

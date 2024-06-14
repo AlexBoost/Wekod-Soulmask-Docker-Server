@@ -60,6 +60,10 @@ services:
           published: 18888
           protocol: tcp
           mode: host
+        - target: 19000
+          published: 19000
+          protocol: tcp
+          mode: host
     environment:
         - SERVER_HOSTNAME=Wekod Docker Server
         - MAX_PLAYER=20
@@ -71,6 +75,11 @@ services:
         - SERVER_PVP=true
         - SERVER_LOGS=false
         - SERVER_MULTIHOME=0.0.0.0
+        - SERVER_BACKUP=60
+        - SERVER_SAVING=60
+        - SERVER_INITBACKUP=true
+        - SERVER_BACKUP_INTERVAL=720
+        - SERVER_RCON_PASSWORD=MySuperRconPassword123456@
 ```
 
 ### Structure
