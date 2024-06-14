@@ -134,29 +134,34 @@ By this way, you'll access to all files from your server, including the WS/Saved
 ```yaml
 ports:
     - target: 8777
-    published: 8777
-    protocol: udp
-    mode: host
+      published: 8777
+      protocol: udp
+      mode: host
     - target: 27015
-    published: 27015
-    protocol: udp
-    mode: host
+      published: 27015
+      protocol: udp
+      mode: host
     - target: 18888
-    published: 18888
-    protocol: tcp
-    mode: host
+      published: 18888
+      protocol: tcp
+      mode: host
+    - target: 19000
+      published: 19000
+      protocol: tcp
+      mode: host
 ```
 
 Soulmask server need at least 2 udp port to be opened. From inside the container, port will be used as defined using the environment variable.
-By default, we are using the 8777 server port and 27015 query port.
+By default, we are using the 8777 server port and 27015 query port. 
+OPTIONALS : 18888 is used for telnet and 19000 is used pour rcon
 
 So let's go deep in one target block.
 
 ```yaml
     - target: 8777
-    published: 8777
-    protocol: udp
-    mode: host
+      published: 8777
+      protocol: udp
+      mode: host
 ```
 `target`: The container port
 
@@ -183,6 +188,11 @@ environment:
     - SERVER_PVP=true
     - SERVER_LOGS=false
     - SERVER_MULTIHOME=0.0.0.0
+    - SERVER_BACKUP=60
+    - SERVER_SAVING=60
+    - SERVER_INITBACKUP=true
+    - SERVER_BACKUP_INTERVAL=720
+    - SERVER_RCON_PASSWORD=MySuperRconPassword123456@
 ```
 
 Each line correspond to an environment variable and it's value. no " needed.
@@ -207,7 +217,10 @@ Environment variables
 | SERVER_INITBACKUP | null | Backs up game saves (world.db) when the game starts. |
 | SERVER_BACKUP_INTERVAL | null | Specifies how often (minutes) to automatically back up the world save (world.db). This will create a copy of the world.db every interval you defined. Location of these files are next to the world.db file (Ex: auto_0_20240605134600.db) |
 | SERVER_LOGS | false | Enable or not the log mode on your server `true` / `false` |
-| SERVER_MULTIHOME | game default value | Specifies the local listening address. |
+| SERVER_MULTIHOME | game default value (0.0.0.0) | Specifies the local listening address. |
+| SERVER_RCON_ADDRESS | game default value (0.0.0.0) | Specifies the ip the rcon handler will be listening on |
+| SERVER_RCON_PORT | game default value (19000) | Specifies the port the rcon handler will be listening on |
+| SERVER_RCON_PASSWORD | null | Specify a password to access to the rcon handler. Needs to be defined to enable the rcon access on the server |
 
 > [!TIP]
 > `SERVER_SAVING` is used to save the world in memory \
