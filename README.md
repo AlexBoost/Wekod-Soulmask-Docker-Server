@@ -80,6 +80,7 @@ services:
         - SERVER_INITBACKUP=true
         - SERVER_BACKUP_INTERVAL=720
         - SERVER_RCON_PASSWORD=MySuperRconPassword123456@
+        - SERVER_MODS=0123456789,1234567890,2345678901
 ```
 
 ### Structure
@@ -193,6 +194,7 @@ environment:
     - SERVER_INITBACKUP=true
     - SERVER_BACKUP_INTERVAL=720
     - SERVER_RCON_PASSWORD=MySuperRconPassword123456@
+    - SERVER_MODS=0123456789,1234567890,2345678901
 ```
 
 Each line correspond to an environment variable and it's value. no " needed.
@@ -221,6 +223,7 @@ Environment variables
 | SERVER_RCON_ADDRESS | game default value (0.0.0.0) | Specifies the ip the rcon handler will be listening on |
 | SERVER_RCON_PORT | game default value (19000) | Specifies the port the rcon handler will be listening on |
 | SERVER_RCON_PASSWORD | null | Specify a password to access to the rcon handler. Needs to be defined to enable the rcon access on the server |
+| SERVER_MODS | null | Specify the mods id which will be installed and enabled on your server. Id => Workshop Id |
 
 > [!TIP]
 > `SERVER_SAVING` is used to save the world in memory \
